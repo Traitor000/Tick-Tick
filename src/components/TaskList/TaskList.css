@@ -1,0 +1,18 @@
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.task-list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pending-tasks,
+.in-progress-tasks,
+.completed-tasks {
+  background-color: #1c1c1e;
+  padding: 20px;
+  border-radius: 4px;
+}
