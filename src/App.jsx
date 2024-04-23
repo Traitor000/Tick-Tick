@@ -100,7 +100,7 @@ const App = () => {
           <button onClick={toggleAddTaskForm}>Add Task ➕</button>
         )}
         <button onClick={clearAllTasks}>Clear All 🗑️</button>
-        <div class="message">Tip :- <em>You can Drag and Drog ToDo Items</em></div>
+        <div className="message">Tip :- <em>You can Drag and Drog ToDo Items</em></div>
         <DragDropContext onDragEnd={onDragEnd}>
           <TaskList tasks={tasks} removeTask={removeTask} updateTask={updateTask} />
         </DragDropContext>
