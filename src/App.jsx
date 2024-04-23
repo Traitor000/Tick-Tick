@@ -1,7 +1,8 @@
 /**
  * The main component of the Tick Tick application.
  * Renders the task list, add task form, and animated background.
- * Handles the state management */
+ * Handles the state management 
+ */
 
 import React, { useState } from 'react';
 import './App.css';
@@ -100,7 +101,7 @@ const App = () => {
           <button onClick={toggleAddTaskForm}>Add Task ➕</button>
         )}
         <button onClick={clearAllTasks}>Clear All 🗑️</button>
-        <div className="message">Tip :- <em>You can Drag and Drog ToDo Items</em></div>
+        <div className="message">Tip :- <em>You can Drag and Drop ToDo Items</em></div>
         <DragDropContext onDragEnd={onDragEnd}>
           <TaskList tasks={tasks} removeTask={removeTask} updateTask={updateTask} />
         </DragDropContext>
